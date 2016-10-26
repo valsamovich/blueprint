@@ -1,2 +1,24 @@
-# spring-boot-restful-web-service
-RESTful Web Service with Spring Boot and JAX-RS
+# spring-boot-restful-web-service [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](LICENSE)
+RESTful Web Service with Spring Boot and JAX-RS 
+
+## Requirements
+
+- Java `1.8`
+  - Port 8080
+  - Lombock
+- Maven `3.3.3`
+
+## Run
+
+To run application from **Integrated Development Environment** (IDE):
+
+- Build the application through your IDE
+  - For **IntelliJ IDEA Lombok** plugin must be installed
+- Run [`com.tools.service.dataconsistency.App`](/src/main/java/com/tools/service/dataconsistency/App.java) as a Java Application
+
+To run application from **Command-Line Interface** (CLI):
+
+- Build the application through your CLI: `mvn clean package`
+- Run application as a `java -jar target/webservice_dataconsistency-*.jar`
+
+
