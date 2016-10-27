@@ -5,7 +5,7 @@ RESTful Web Service with Spring Boot and JAX-RS
 ## Requirements
 
 - Java `1.8`
-  - Port 8080
+  - Port `8080`
   - Lombock
 - Maven `3.3.3`
 
@@ -21,5 +21,12 @@ To run application from **Command-Line Interface** (CLI):
 
 - Build the application through your CLI: `mvn clean package`
 - Run application as a `java -jar target/webservice_dataconsistency-*.jar`
+
+When service is up, visit http://localhost:8080/greeting to see:
+
+    {
+        "Spring Boot": "v1.3.5.RELEASE"
+    }
+
 
 
