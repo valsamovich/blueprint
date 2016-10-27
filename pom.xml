@@ -1,16 +1,41 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <!-- project coordinates -->
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.samovich.services</groupId>
-    <artifactId>webservice_dataservices</artifactId>
+    <groupId>com.samovich.service</groupId>
+    <artifactId>webservice-spring-boot-sceleton</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-
+    <!-- parent information -->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>1.3.5.RELEASE</version>
     </parent>
-
+    <!-- developer(s) -->
+    <developers>
+        <developer>
+            <id>samov004</id>
+            <name>Valery Samovich</name>
+            <email>valery.y.samovich@disney.com</email>
+        </developer>
+    </developers>
+    <!-- project properties -->
+    <properties>
+        <start-class>com.tools.service.dataconsistency.App</start-class>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <retrofit.version>2.0.2</retrofit.version>
+        <!-- Note: Powermock 1.6.5 breaks it's own @Mock annotation.
+        upgrade to 1.6.6, or higher, once it is released.
+        See https://github.com/jayway/powermock/pull/669 -->
+        <powermock.version>1.6.4</powermock.version>
+        <wdpr.svc.core.version>0.1.0-63.0.0.0</wdpr.svc.core.version>
+        <jacoco.test.coverage>.80</jacoco.test.coverage>
+        <jacoco.test.branch.coverage>.80</jacoco.test.branch.coverage>
+        <jacoco.haltOnfail>true</jacoco.haltOnfail>
+        <!-- javassist to resolve bug with powermock -->
+        <javassist.version>3.20.0-GA</javassist.version>
+    </properties>
     <build>
         <pluginManagement>
             <plugins>
@@ -19,8 +44,7 @@
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>2.19.1</version>
                     <configuration>
-                        <!-- Sets the VM argument line used when unit tests
-                            are run. -->
+                        <!-- Sets the VM argument line used when unit tests are run. -->
                         <argLine>${surefireArgLine}</argLine>
                     </configuration>
                 </plugin>
@@ -56,7 +80,8 @@
                 <artifactId>jacoco-maven-plugin</artifactId>
                 <executions>
                     <!-- Prepares the property pointing to the JaCoCo runtime
-                        agent which is passed as VM argument when Maven the Surefire plugin is executed. -->
+                    agent which is passed as VM argument when Maven the
+                    Surefire plugin is executed. -->
                     <execution>
                         <id>jacoco-prepare-agent</id>
                         <goals>
@@ -104,7 +129,7 @@
                                 </rule>
                             </rules>
                             <!-- Sets the path to the file which contains
-                                the execution data. -->
+                            the execution data. -->
                             <dataFile>${project.build.directory}/coverage-reports/jacoco-ut.exec</dataFile>
                         </configuration>
                     </execution>
@@ -130,23 +155,8 @@
         </plugins>
     </build>
 
-    <properties>
-        <start-class>com.tools.service.dataconsistency.App</start-class>
-        <maven.compiler.target>1.8</maven.compiler.target>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <retrofit.version>2.0.2</retrofit.version>
-        <!-- Note: Powermock 1.6.5 breaks it's own @Mock annotation, upgrade to 1.6.6, or higher, once it is released.  See https://github.com/jayway/powermock/pull/669 -->
-        <powermock.version>1.6.4</powermock.version>
-        <wdpr.svc.core.version>0.1.0-63.0.0.0</wdpr.svc.core.version>
-        <jacoco.test.coverage>.80</jacoco.test.coverage>
-        <jacoco.test.branch.coverage>.80</jacoco.test.branch.coverage>
-        <jacoco.haltOnfail>true</jacoco.haltOnfail>
-        <!-- javassist to resolve bug with powermock -->
-        <javassist.version>3.20.0-GA</javassist.version>
-    </properties>
-
+    <!-- build plugin(s) and configuration(s) -->
     <dependencies>
-
         <!-- spring boot -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -166,14 +176,12 @@
                 </exclusion>
             </exclusions>
         </dependency>
-
         <!-- cxf -->
         <dependency>
             <groupId>org.apache.cxf</groupId>
             <artifactId>cxf-rt-frontend-jaxrs</artifactId>
             <version>3.1.6</version>
         </dependency>
-
         <!-- jackson -->
         <dependency>
             <groupId>com.fasterxml.jackson.jaxrs</groupId>
@@ -188,7 +196,6 @@
             <artifactId>jackson-module-afterburner</artifactId>
             <version>${jackson.version}</version>
         </dependency>
-
         <!-- Swagger Dependencies -->
         <dependency>
             <groupId>io.swagger</groupId>
@@ -201,7 +208,6 @@
                 </exclusion>
             </exclusions>
         </dependency>
-
         <!-- retrofit -->
         <dependency>
             <groupId>com.squareup.retrofit2</groupId>
@@ -223,7 +229,6 @@
             <artifactId>logging-interceptor</artifactId>
             <version>3.2.0</version>
         </dependency>
-
         <!-- misc -->
         <dependency>
             <groupId>com.google.guava</groupId>
@@ -240,7 +245,6 @@
             <artifactId>lombok</artifactId>
             <version>1.16.8</version>
         </dependency>
-
         <!-- unit testing -->
         <dependency>
             <groupId>junit</groupId>

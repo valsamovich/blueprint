@@ -10,21 +10,22 @@ import javax.ws.rs.core.Response;
 import java.util.Map;
 
 /**
- * Filename webservice_dataconsistency
+ * General endpoint for quick start.
+ * Filename Skeleton.java
  * Created by Valery Samovich
  * Written on 7/14/16
  */
 
 @Service
 @Path("/")
-public class Sceleton {
+public class Skeleton {
 
     @GET
-    @Path("hello")
+    @Path("app")
     @Produces({"application/json"})
-    public Response getHours() {
+    public Response getAppHello() {
         Map<String, Object> objectResponse = Maps.newLinkedHashMap();
-        objectResponse.put("content", "Hello, from Spring Boot App!");
+        objectResponse.put("Spring Boot", "v1.3.5.RELEASE");
         return Response.ok(objectResponse).build();
     }
 

@@ -19,9 +19,15 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 import javax.sql.DataSource;
 
+/**
+ * Spring Boot App configuration.
+ * Filename App.java
+ * Created by Valery Samovich
+ * Written on 7/14/16
+ */
+
 @EnableScheduling
 @SpringBootApplication
-//@PropertySource({"classpath:/default.properties", "classpath:/environment/${ENV}.properties"})
 @Import({SpringComponentScanServer.class, JmxAutoConfiguration.class})
 public class App {
 
@@ -53,13 +59,10 @@ public class App {
 
     @Bean
     public ObjectMapper objectMapper() {
-
         ObjectMapper mapper = new ObjectMapper();
-
         mapper.registerModule(new AfterburnerModule());
         mapper.setSerializationInclusion(Include.NON_NULL);
         mapper.registerModule(new JavaTimeModule());
-
         return mapper;
     }
 
