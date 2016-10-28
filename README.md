@@ -28,5 +28,12 @@ When service is up, visit http://localhost:8080/greeting to see:
         "Spring Boot": "v1.3.5.RELEASE"
     }
 
+## Docker
 
+Application support docker and deployed via [Dockerfile](Dockerfile):
+    
+    FROM java:openjdk-8-jre
+    VOLUME /tmp
+    ARG APP_VERSION
+    ADD
 
