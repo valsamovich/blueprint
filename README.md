@@ -32,8 +32,10 @@ When service is up, visit http://localhost:8080/greeting to see:
 
 Application support docker and deployed via [Dockerfile](Dockerfile):
     
-    FROM java:openjdk-8-jre
+    FROM openjdk-8-jre
     VOLUME /tmp
     ARG APP_VERSION
-    ADD
+    ADD spring-boot-restful-web-serivce-${APP_VERSION}.jar app.jar
+    ADD ${APP_FILE} app.jar
+    ENTRYPOINT ["java","-Djava.security.historyegd=file:/dev/./urandom","-jar","/app.jar"]
 
