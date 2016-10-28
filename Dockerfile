@@ -1,4 +1,4 @@
-FROM openjdk-8-jre
+FROM FROM frolvlad/alpine-oraclejdk8:slim
 VOLUME /tmp
 ARG APP_VERSION
 ADD spring-boot-restful-web-serivce-${APP_VERSION}.jar app.jar
