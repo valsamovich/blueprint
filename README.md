@@ -1,4 +1,4 @@
-# spring-boot-restful-web-service [![Build Status](https://travis-ci.org/vsamov/spring-boot-restful-web-service.svg?branch=master)](https://travis-ci.org/vsamov/spring-boot-restful-web-service) [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](LICENSE)
+# spring-boot-skeleton [![Build Status](https://travis-ci.org/vsamov/spring-boot-restful-web-service.svg?branch=master)](https://travis-ci.org/vsamov/spring-boot-restful-web-service) [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](LICENSE)
 
 RESTful Web Service with Spring Boot and JAX-RS 
 
