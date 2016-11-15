@@ -4,9 +4,7 @@ RESTful Web Service with Spring Boot and JAX-RS
 
 ## Requirements
 
-- Java `1.8`
-  - Port `8080`
-  - Lombock
+- Java `1.8` (Port `8080`, Lombock)
 - Maven `3.3.3`
 
 ## Run
