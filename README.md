@@ -2,12 +2,12 @@
 
 RESTful Web Service with Spring Boot and JAX-RS 
 
-## Requirements
+## Installations
 
 - Java `1.8` (Port `8080`, Lombock)
 - Maven `3.3.3`
 
-## Run
+## Usage
 
 To run application from **Integrated Development Environment** (IDE):
 
