@@ -1,4 +1,4 @@
-FROM frolvlad/alpine-oraclejdk8:slim
+FROM java:openjdk-8-jre
 VOLUME /tmp
 ADD target/spring-boot-skeleton-0.1.0.jar app.jar
 RUN sh -c 'touch /app.jar'
