@@ -1,4 +1,4 @@
-# spring-boot-skeleton [![Build Status](https://travis-ci.org/vsamov/spring-boot-skeleton.svg?branch=master)](https://travis-ci.org/vsamov/spring-boot-skeleton-service) [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](LICENSE)
+# spring-boot-skeleton [![Build Status](https://travis-ci.org/vsamov/spring-boot-skeleton.svg?branch=master)](https://travis-ci.org/vsamov/spring-boot-skeleton-service) [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](LICENSE) [![Docker Automated buil](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg)](https://hub.docker.com/r/vsamov/spring-boot-skeleton/)
 
 RESTful Web Service with Spring Boot and JAX-RS 
 
