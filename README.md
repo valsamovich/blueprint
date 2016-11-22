@@ -1,4 +1,4 @@
-# spring-boot-skeleton [![Build Status](https://travis-ci.org/vsamov/spring-boot-skeleton.svg?branch=master)](https://travis-ci.org/vsamov/spring-boot-skeleton-service) [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](LICENSE) [![Docker Automated buil](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg)](https://hub.docker.com/r/vsamov/spring-boot-skeleton/)
+# blueprint [![Build Status](https://travis-ci.org/vsamov/spring-boot-skeleton.svg?branch=master)](https://travis-ci.org/vsamov/spring-boot-skeleton-service) [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](LICENSE) [![Docker Automated buil](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg)](https://hub.docker.com/r/vsamov/spring-boot-skeleton/)
 
 RESTful Web Service with Spring Boot and JAX-RS 
 
@@ -20,7 +20,7 @@ To run application from **Command-Line Interface** (CLI):
 - Build the application through your CLI: `mvn clean package`
 - Run application as a `java -jar target/webservice_dataconsistency-*.jar`
 
-When service is up, visit http://localhost:8080/greeting to see:
+When service is up, visit http://localhost:8080/blueprint to see:
 
     {
         "Spring Boot": "v1.3.5.RELEASE"
