@@ -1,4 +1,4 @@
-package com.samovich.service;
+package com.samovich.service.blueprint;
 
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.databind.ObjectMapper;

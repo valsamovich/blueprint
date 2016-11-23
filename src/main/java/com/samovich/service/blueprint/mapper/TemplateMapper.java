@@ -1,4 +1,4 @@
-package com.samovich.service.mapper;
+package com.samovich.service.blueprint.mapper;
 
 /**
  * Filename TemplateMapper.java

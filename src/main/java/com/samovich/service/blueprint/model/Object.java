@@ -1,4 +1,4 @@
-package com.samovich.service.model;
+package com.samovich.service.blueprint.model;
 
 /**
  * Filename Object.java

@@ -1,4 +1,4 @@
-package com.samovich.service.webservice;
+package com.samovich.service.blueprint.webservice;
 
 import com.google.common.collect.Maps;
 import org.springframework.stereotype.Service;
@@ -18,10 +18,10 @@ import java.util.Map;
 
 @Service
 @Path("/")
-public class Skeleton {
+public class Blueprint {
 
     @GET
-    @Path("app")
+    @Path("blueprint")
     @Produces({"application/json"})
     public Response getAppHello() {
         Map<String, Object> objectResponse = Maps.newLinkedHashMap();

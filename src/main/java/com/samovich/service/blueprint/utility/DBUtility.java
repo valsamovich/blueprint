@@ -1,4 +1,4 @@
-package com.samovich.service.utility;
+package com.samovich.service.blueprint.utility;
 
 /**
  * Filename DBUtility.java

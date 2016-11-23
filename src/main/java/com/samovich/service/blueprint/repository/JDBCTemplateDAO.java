@@ -1,4 +1,4 @@
-package com.samovich.service.repository;
+package com.samovich.service.blueprint.repository;
 
 /**
  * Filename JDBCTemplateDAO.java
