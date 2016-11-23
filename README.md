@@ -1,6 +1,6 @@
 # blueprint [![Build Status](https://travis-ci.org/vsamov/blueprint.svg?branch=master)](https://travis-ci.org/vsamov/blueprint) [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](LICENSE) [![Docker Automated buil](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg)](https://hub.docker.com/r/vsamov/spring-boot-skeleton/)
 
-RESTful Web Service with Spring Boot and JAX-RS 
+RESTful Web Service with Spring Boot, Apache CXF, and JAX-RS 
 
 ## Installations
 
