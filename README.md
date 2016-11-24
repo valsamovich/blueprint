@@ -23,7 +23,7 @@ To run application from **Command-Line Interface** (CLI):
 When service is up, visit http://localhost:8080/blueprint to see:
 
     {
-        "Spring Boot": "v1.3.5.RELEASE"
+        "Description": "Spring Boot CXF Client Application with JAX-RS"
     }
 
 ## Docker
