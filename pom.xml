@@ -15,7 +15,7 @@
     <description>Spring Boot CXF Client Application with JAX-RS</description>
     <url>https://github.com/vsamov/blueprint</url>
 
-    <!--license-->
+    <!-- license -->
     <licenses>
         <license>
             <name>The MIT License (MIT)</name>

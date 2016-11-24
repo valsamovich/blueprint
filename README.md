@@ -4,8 +4,8 @@ Spring Boot CXF Client Application with JAX-RS
 
 ## Installations
 
-- Java `1.8` (Port `8080`, Lombock)
-- Maven `3.3.3`
+- Java `1.8` (Port `8080`)
+- Maven `3.3.3` minimum
 
 ## Usage
 
