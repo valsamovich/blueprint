@@ -1,4 +1,4 @@
-# blueprint [![Build Status](https://travis-ci.org/vsamov/blueprint.svg?branch=master)](https://travis-ci.org/vsamov/blueprint) [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](LICENSE) [![Docker Automated buil](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg)](https://hub.docker.com/r/vsamov/spring-boot-skeleton/)
+# blueprint [![Build Status](https://travis-ci.org/vsamov/blueprint.svg?branch=master)](https://travis-ci.org/vsamov/blueprint) [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](LICENSE) [![Docker Automated buil](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg)](https://hub.docker.com/r/vsamov/blueprint/)
 
 Spring Boot CXF Client Application with JAX-RS 
 
@@ -23,7 +23,7 @@ To run application from **Command-Line Interface** (CLI):
 When service is up, visit http://localhost:8080/blueprint to see:
 
     {
-        "Spring Boot": "v1.3.5.RELEASE"
+        "Description": "Spring Boot CXF Client Application with JAX-RS"
     }
 
 ## Docker
@@ -33,7 +33,7 @@ Application support docker and deployed via [Dockerfile](Dockerfile):
     FROM openjdk-8-jre
     VOLUME /tmp
     ARG APP_VERSION
-    ADD spring-boot-restful-web-serivce-${APP_VERSION}.jar app.jar
+    ADD blueprint-${APP_VERSION}.jar app.jar
     ADD ${APP_FILE} app.jar
     ENTRYPOINT ["java","-Djava.security.historyegd=file:/dev/./urandom","-jar","/app.jar"]
 
