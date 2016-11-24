@@ -1,3 +1,9 @@
+/**
+ * The MIT License (MIT)
+ * Copyright (c) 2016 Valery Samovich
+ * http://opensource.org/licenses/MIT
+ */
+
 package com.samovich.service.blueprint;
 
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
@@ -20,10 +26,11 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 import javax.sql.DataSource;
 
 /**
- * Spring Boot App configuration.
- * Filename App.java
- * Created by Valery Samovich
- * Written on 7/14/16
+ * This class consists Spring Boot App configuration
+ * @author  Valery Samovich
+ * @see     SpringApplication
+ * @see     JacksonJaxbJsonProvider
+ * @see     CXFServlet
  */
 
 @EnableScheduling
@@ -37,7 +44,7 @@ public class App {
 
     /**
      * Defines the servlet bean to use with CXF.
-     *
+     * It deprecated from 1.4.1.RELEASE of the spring-boot-starter-parent
      * @return the {@link ServletRegistrationBean}
      */
     @Bean
@@ -57,6 +64,10 @@ public class App {
         return provider;
     }
 
+    /**
+     * Object mapper
+     * @return mapper
+     */
     @Bean
     public ObjectMapper objectMapper() {
         ObjectMapper mapper = new ObjectMapper();
@@ -66,6 +77,10 @@ public class App {
         return mapper;
     }
 
+    /**
+     * Data source configuration with dbcp
+     * @return dataSource
+     */
     @Bean
     public DataSource dataSource() {
         BasicDataSource dataSource = new BasicDataSource();

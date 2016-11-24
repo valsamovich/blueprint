@@ -1,3 +1,9 @@
+/**
+ * The MIT License (MIT)
+ * Copyright (c) 2016 Valery Samovich
+ * http://opensource.org/licenses/MIT
+ */
+
 package com.samovich.service.blueprint.webservice;
 
 import com.google.common.collect.Maps;
@@ -10,10 +16,9 @@ import javax.ws.rs.core.Response;
 import java.util.Map;
 
 /**
- * General endpoint for quick start.
- * Filename Skeleton.java
- * Created by Valery Samovich
- * Written on 7/14/16
+ * This class consists general endpoint for quick start.
+ * @author  Valery Samovich
+ * @see     Map
  */
 
 @Service
@@ -25,7 +30,9 @@ public class Blueprint {
     @Produces({"application/json"})
     public Response getAppHello() {
         Map<String, Object> objectResponse = Maps.newLinkedHashMap();
-        objectResponse.put("Spring Boot", "v1.3.5.RELEASE");
+        objectResponse.put(
+                "Description",
+                "Spring Boot CXF Client Application with JAX-RS");
         return Response.ok(objectResponse).build();
     }
 

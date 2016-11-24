@@ -1,9 +1,14 @@
+/**
+ * The MIT License (MIT)
+ * Copyright (c) 2016 Valery Samovich
+ * http://opensource.org/licenses/MIT
+ */
+
 package com.samovich.service.blueprint.model;
 
 /**
- * Filename Object.java
- * Created by Valery Samovich
- * Written on 10/27/16
+ * This class consists Spring Boot App configuration
+ * @author  Valery Samovich
  */
 public class Object {
     // Template for models
