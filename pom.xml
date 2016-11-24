@@ -54,7 +54,7 @@
 
     <!-- build plugin(s) and configuration(s) -->
     <dependencies>
-        <!-- Spring boot https://projects.spring.io/spring-boot/ -->
+        <!-- spring boot https://projects.spring.io/spring-boot/ -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
